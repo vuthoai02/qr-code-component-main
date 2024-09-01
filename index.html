@@ -1,28 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background-color: hsl(212, 45%, 89%);
+      }
 
-  Improve your front-end skills by building projects
+      .qr-code-component {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      
+      @media screen and (min-width: 376px) {
+        .qr-code-card {
+          background-color: hsl(0, 0%, 100%);
+          padding: 15px;
+          width: 17%;
+          height: 65%;
+          border-radius: 21px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+      }
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      @media screen and (max-width: 376px) {
+        .qr-code-card {
+          background-color: hsl(0, 0%, 100%);
+          padding: 15px;
+          width: 80%;
+          height: 65%;
+          border-radius: 21px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+      }
+
+      .qr-code-card-media img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+
+      .qr-code-card-title{
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+        text-align: center;
+        font-size: 18px;
+        width: 80%;
+        margin: 15px auto;
+      }
+
+      .qr-code-card-context{
+        font-size: 15px;
+        color: hsl(216, 15%, 48%);
+        text-align: center;
+        font-weight: 400;
+      }
+
+      .attribution p {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qr-code-component">
+      <div class="qr-code-card">
+        <div class="qr-code-card-media">
+          <img src="./images/image-qr-code.png" alt="qr-code" />
+        </div>
+        <div class="qr-code-card-content">
+          <div class="qr-code-card-title">
+            Improve your front-end skills by building projects
+          </div>
+          <div class="qr-code-card-context">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/vuthoai02">vuthoai02</a>.
+      </p>
+    </div>
+  </body>
 </html>
