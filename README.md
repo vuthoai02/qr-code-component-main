@@ -24,7 +24,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [https://vuthoai02.github.io/qr-code-component-main/](https://vuthoai02.github.io/qr-code-component-main/)
+- Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-xCTpXb5y9I](https://www.frontendmentor.io/solutions/qr-code-component-xCTpXb5y9I)
+- Live Site URL: [https://vuthoai02.github.io/qr-code-component-main/](https://vuthoai02.github.io/qr-code-component-main/)
 
 
 ## My process
